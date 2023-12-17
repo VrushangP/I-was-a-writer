@@ -17,9 +17,9 @@
       $projectPrefix = '../projects/';
       $coopPrefix = '../co-op/';
       if ($optional === 'snak') {
-        $scriptPrefix = '../../js/snake.js';
+        $scriptPrefix = '../js/snake.js';
       } else {
-        $scriptPrefix = '../../js/scripts.js';
+        $scriptPrefix = '../js/scripts.js';
       }
     } else {
       $indexPrefix = '../../../';
@@ -31,7 +31,7 @@
     }
     try {
       $header = sprintf('<!DOCTYPE html>
-      <html lang="en">
+      <html lang="en" class="has-background-primary-light"></html>
       <head>
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -40,6 +40,8 @@
       <meta name="viewport" content="width=device-width" />
       <link rel="stylesheet" href="%sbulma.css">
       <link rel="stylesheet" href="%scustom.css">
+      <link rel="stylesheet" href="%sspinners.css">
+      <link rel="stylesheet" href="%stawian-frontend.css">
       <link rel="icon" href="%sfavicon.ico">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
       <script src="%s" defer type="module"></script>
@@ -110,7 +112,7 @@
             </div>
           </div>
         </nav>
-      </div>',$stylePrefix, $stylePrefix,$imagePrefix, $scriptPrefix, $indexPrefix, $imagePrefix, $pagesPrefix, $pagesPrefix, $pagesPrefix, $coopPrefix, $coopPrefix, $projectPrefix, $projectPrefix, $projectPrefix, $projectPrefix, $projectPrefix);
+      </div>',$stylePrefix, $stylePrefix, $stylePrefix, $stylePrefix, $imagePrefix, $scriptPrefix, $indexPrefix, $imagePrefix, $pagesPrefix, $pagesPrefix, $pagesPrefix, $coopPrefix, $coopPrefix, $projectPrefix, $projectPrefix, $projectPrefix, $projectPrefix, $projectPrefix);
       return $header;
     } catch (Exception  $e) {
       // Handle a specific exception type

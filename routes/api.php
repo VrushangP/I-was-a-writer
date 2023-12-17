@@ -21,4 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Assuming that AnimeController is in the App\Http\Controllers namespace
 Route::get('/anime/get-row/{id}', [AnimeController::class, 'getRowById'])->name('anime.getRow');
-Route::get('/anime/v1/hello', [AnimeController::class, 'hi'])->name('anime.hi');
+Route::get('/anime/hello', [AnimeController::class, 'hi'])->name('anime.hi');
