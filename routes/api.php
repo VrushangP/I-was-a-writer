@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AnimeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// Assuming that AnimeController is in the App\Http\Controllers namespace
+Route::get('/anime/get-row/{id}', [AnimeController::class, 'getRowById'])->name('anime.getRow');
+Route::get('/anime/v1/hello', [AnimeController::class, 'hi'])->name('anime.hi');

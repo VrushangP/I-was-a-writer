@@ -13,52 +13,34 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Index pages
 
-Route::get('/index', function () {
-    return view('home');
-});
+Route::get('/', function () { return view('home'); });
 
-Route::get('/blog', function () {
-    return view('home');
-});
+Route::get('/index', function () { return view('home'); });
 
-Route::get('/aboutme', function () {
-    return view('home');
-});
+Route::get('/blog', function () { return view('home'); });
+
+Route::get('/aboutme', function () { return view('home'); });
 
 
-Route::get('/experience', function () {
-    return view('home');
-});
+// Coop pages
 
-Route::get('/co-op/cooperators', function () {
-    return view('co-op/cooperators');
-});
+Route::get('/experience', function () { return view('home'); });
 
-Route::get('/co-op/tekside', function () {
-    return view('co-op/tekside');
-});
+Route::get('/co-op/cooperators', function () { return view('co-op/cooperators'); });
+
+Route::get('/co-op/tekside', function () { return view('co-op/tekside'); });
 
 
-Route::get('/projects/snake', function () {
-    return view('projects/snake');
-});
+// Project Pages
 
-Route::get('/projects/voltorbFlip', function () {
-    return view('projects/voltorbFlip');
-});
+Route::get('/projects/snake', function () { return view('projects/snake'); });
 
-Route::get('/projects/yomaSlayers', function () {
-    return view('projects/yomaSlayers');
-});
+Route::get('/projects/voltorbFlip', function () { return view('projects/voltorbFlip'); });
 
-Route::get('/projects/manager', function () {
-    return view('projects/manager');
-});
+Route::get('/projects/yomaSlayers', function () { return view('projects/yomaSlayers'); });
 
-Route::get('/projects/github', function () {
-    return view('projects/github');
-});
+Route::get('/projects/manager', function () { return view('projects/manager'); });
+
+Route::get('/projects/github', function () { return view('projects/github'); });
